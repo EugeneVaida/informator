@@ -1,0 +1,10 @@
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\bin\Debug\Одномерные массивы.exe.config
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\bin\Debug\Одномерные массивы.exe
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\bin\Debug\Одномерные массивы.pdb
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\obj\Debug\Одномерные массивы.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\obj\Debug\Одномерные_массивы.Form1.resources
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\obj\Debug\Одномерные_массивы.Properties.Resources.resources
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\obj\Debug\Одномерные массивы.csproj.GenerateResource.Cache
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\obj\Debug\Одномерные массивы.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\obj\Debug\Одномерные массивы.exe
+C:\Users\Евгений\Desktop\Практика\Одномерные массивы\Одномерные массивы\obj\Debug\Одномерные массивы.pdb

@@ -1,0 +1,10 @@
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\obj\Debug\Задание 2.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\obj\Debug\Задание_2.Form1.resources
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\obj\Debug\Задание_2.Properties.Resources.resources
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\obj\Debug\Задание 2.csproj.GenerateResource.Cache
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\obj\Debug\Задание 2.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\bin\Debug\Задание 2.exe.config
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\bin\Debug\Задание 2.exe
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\bin\Debug\Задание 2.pdb
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\obj\Debug\Задание 2.exe
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 2\Задание 2\obj\Debug\Задание 2.pdb

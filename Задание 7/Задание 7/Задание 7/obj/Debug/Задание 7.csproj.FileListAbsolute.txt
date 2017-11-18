@@ -1,0 +1,10 @@
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\bin\Debug\Задание 7.exe.config
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\bin\Debug\Задание 7.exe
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\bin\Debug\Задание 7.pdb
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\obj\Debug\Задание 7.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\obj\Debug\Задание_7.Form1.resources
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\obj\Debug\Задание_7.Properties.Resources.resources
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\obj\Debug\Задание 7.csproj.GenerateResource.Cache
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\obj\Debug\Задание 7.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\obj\Debug\Задание 7.exe
+C:\Users\Евгений\Desktop\Практика\Новая папка\Задание 7\Задание 7\obj\Debug\Задание 7.pdb

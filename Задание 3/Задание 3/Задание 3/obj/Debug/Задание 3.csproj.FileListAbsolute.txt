@@ -1,0 +1,20 @@
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\bin\Debug\Задание 3.exe.config
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\bin\Debug\Задание 3.exe
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\bin\Debug\Задание 3.pdb
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\obj\Debug\Задание_3.Form1.resources
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\obj\Debug\Задание_3.Properties.Resources.resources
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.csproj.GenerateResource.Cache
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.exe
+C:\Users\Евгений\Desktop\Практика\Задание 2\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.pdb
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\bin\Debug\Задание 3.exe.config
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\bin\Debug\Задание 3.exe
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\bin\Debug\Задание 3.pdb
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\obj\Debug\Задание_3.Form1.resources
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\obj\Debug\Задание_3.Properties.Resources.resources
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.csproj.GenerateResource.Cache
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.exe
+C:\Users\Евгений\Desktop\Практика\Задание 3\Задание 3\Задание 3\obj\Debug\Задание 3.pdb

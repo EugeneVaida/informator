@@ -1,0 +1,10 @@
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\bin\Debug\Комплексные числа.exe.config
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\bin\Debug\Комплексные числа.exe
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\bin\Debug\Комплексные числа.pdb
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\obj\Debug\Комплексные числа.csprojResolveAssemblyReference.cache
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\obj\Debug\Комплексные_числа.Form1.resources
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\obj\Debug\Комплексные_числа.Properties.Resources.resources
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\obj\Debug\Комплексные числа.csproj.GenerateResource.Cache
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\obj\Debug\Комплексные числа.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\obj\Debug\Комплексные числа.exe
+C:\Users\Евгений\Desktop\Практика\Комплексные числа\Комплексные числа\obj\Debug\Комплексные числа.pdb
