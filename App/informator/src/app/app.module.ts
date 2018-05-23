@@ -1,29 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserService } from './shared/user.service';
+
 
 import { AppComponent } from './app.component';
-import { StudentsComponent } from './students/students.component';
-import { StudentComponent } from './students/student/student.component';
-import { StudentListComponent } from './students/student-list/student-list.component';
-import { environment } from '../environments/environment';
+import { SignUpComponent } from './sign-up/sign-up.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentsComponent,
-    StudentComponent,
-    StudentListComponent
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
