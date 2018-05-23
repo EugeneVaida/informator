@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserService } from './shared/user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -19,7 +20,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     BrowserModule,
     FormsModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
