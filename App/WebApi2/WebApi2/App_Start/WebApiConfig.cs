@@ -4,15 +4,16 @@ using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
-namespace WebApi2
+namespace WebAPI
 {
     public static class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
         {
-            // Конфигурация и службы веб-API
-            config.EnableCors(new EnableCorsAttribute("http://localhost:4200", headers: "*", methods: "*"));
-            // Маршруты веб-API
+            // Web API configuration and services
+            //config.EnableCors(new EnableCorsAttribute("http://localhost:4200", headers: "*", methods: "*"));
+
+            // Web API routes
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

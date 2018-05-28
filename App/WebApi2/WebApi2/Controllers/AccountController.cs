@@ -14,7 +14,7 @@ namespace WebApi2.Controllers
     public class AccountController : ApiController
     {
         [Route("api/User/Register")]
-        [HttpPost]  
+        [HttpPost]
         [AllowAnonymous]
         public IdentityResult Register(AccountModel model)
         {
@@ -31,7 +31,7 @@ namespace WebApi2.Controllers
             return result;
         }
 
-        [HttpGet]        
+        [HttpGet]
         [Route("api/GetUserClaims")]
         public AccountModel GetUserClaims()
         {
