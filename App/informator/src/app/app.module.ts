@@ -14,7 +14,9 @@ import { HomeComponent } from './home/home.component';
 import { SignUpComponent } from './user/sign-up/sign-up.component';
 import { appRoutes } from './routes';
 import { AuthGuard } from './auth/auth.guard';
-
+import { AuthInterceptor } from './auth/auth.interceptor';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { ForbiddenComponent } from './forbidden/forbidden.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { AuthGuard } from './auth/auth.guard';
     SignUpComponent,
     UserComponent,
     SignInComponent,
-    HomeComponent
+    HomeComponent,
+    AdminPanelComponent,
+    ForbiddenComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,13 @@ import { AuthGuard } from './auth/auth.guard';
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [UserService,AuthGuard],
+  providers: [UserService,AuthGuard,
+    ,
+    {
+      provide : HTTP_INTERCEPTORS,
+      useClass : AuthInterceptor,
+      multi : true
+    }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

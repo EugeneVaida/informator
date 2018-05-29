@@ -13,11 +13,18 @@ import { ToastrService } from 'ngx-toastr'
 export class SignUpComponent implements OnInit {
   user : User;  	
   emailPattern  = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+  roles : any[];
 
   constructor( private UserService: UserService, private toastr: ToastrService) { }
 
   ngOnInit() {
     this.resetForm();
+    this.UserService.getAllRoles().subscribe(
+      (data : any)=>{
+        data.forEach(obj => obj.selected = false);
+        this.roles = data;
+      }
+    );
   }
 
   resetForm (form? : NgForm){
@@ -30,10 +37,13 @@ export class SignUpComponent implements OnInit {
       Password: '',
       Email:''
     }
+    if(this.roles)
+      this.roles.map(x => x.selected = false);
   }
 
   OnSubmit(form : NgForm){
-    this.UserService.registerUser(form.value).subscribe((data:any) => {
+    var x = this.roles.filter(x => x.selected).map(y => y.Name);    
+    this.UserService.registerUser(form.value, x).subscribe((data:any) => {
       if (data.Succeeded == true){
         this.resetForm(form);
         this.toastr.success('Successful registration');
@@ -44,4 +54,8 @@ export class SignUpComponent implements OnInit {
     });
   }
 
+
+  updateSelectedRoles(index){
+    this.roles[index].selected = !this.roles[index].selected;
+  }
 }
