@@ -17,6 +17,8 @@ import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
+import { NewsComponent } from './news/news.component';
+import { NewsListComponent } from './news-list/news-list.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
     SignInComponent,
     HomeComponent,
     AdminPanelComponent,
-    ForbiddenComponent
+    ForbiddenComponent,
+    NewsComponent,
+    NewsListComponent
   ],
   imports: [
     BrowserModule,
