@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router'
+import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component';
 import { UserService } from './shared/user.service';
@@ -17,6 +18,7 @@ import { AuthGuard } from './auth/auth.guard';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
+
 import { NewsComponent } from './news/news.component';
 import { NewsListComponent } from './news-list/news-list.component';
 
@@ -39,7 +41,8 @@ import { NewsListComponent } from './news-list/news-list.component';
     HttpClientModule,
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpModule
   ],
   providers: [UserService,AuthGuard,
     ,
