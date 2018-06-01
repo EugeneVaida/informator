@@ -4,6 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 import { News } from './news.model';
+import { HttpHeaders } from '@angular/common/http';
 
 @Injectable()
 export class NewsService {
@@ -13,8 +14,8 @@ export class NewsService {
 
   postNews(nws : News){
     var body = JSON.stringify(nws);
-    var headerOptions = new Headers({'Content-Type':'application/json'});
-    var requestOptions = new RequestOptions({method : RequestMethod.Post,headers : headerOptions});
+    var headers = new HttpHeaders("Authorization", "Bearer " + localStorage.getItem('userToken');
+    var requestOptions = new RequestOptions({method : RequestMethod.Post,headers : headers});
     return this.http.post('http://localhost:6936/api/News',body,requestOptions).map(x => x.json());
   }
  
@@ -22,7 +23,7 @@ export class NewsService {
     var body = JSON.stringify(nws);
     var headerOptions = new Headers({ 'Content-Type': 'application/json' });
     var requestOptions = new RequestOptions({ method: RequestMethod.Put, headers: headerOptions });
-    return this.http.put('http://localhost:6936/api/News/' + id,
+    return this.http.put('http://localhost:6936/api/PutNews/' + id,
       body,
       requestOptions).map(res => res.json());
   }

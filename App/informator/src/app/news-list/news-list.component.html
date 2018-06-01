@@ -5,6 +5,12 @@
         <div class="card-content white-text">
           <span class="card-title">{{ news.NewsName }}</span>
           <p>{{ news.Text }}</p>
+          <a class="btn text-danger" (click)="onDelete(news.ID)">
+            <i class="material-icons">delete</i>
+          </a>
+          <a class="btn text-danger" (click)="showForEdit(news)">
+            <i class="material-icons">create</i>
+          </a>
         </div>          
       </div>
     </div>

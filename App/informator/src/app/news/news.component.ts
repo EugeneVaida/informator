@@ -33,7 +33,7 @@ export class NewsComponent implements OnInit {
   onSubmit(form : NgForm){
     if (form.value.ID == null){
       this.newsService.postNews(form.value).subscribe( data => { 
-        this.resetForm();
+        this.resetForm(form);
         this.newsService.getNewsList();
         this.toastr.success('News added','News add');
       })
@@ -41,7 +41,7 @@ export class NewsComponent implements OnInit {
     else
     {
       this.newsService.putNews(form.value.ID,form.value).subscribe( data => {
-        this.resetForm();
+        this.resetForm(form);
         this.newsService.getNewsList();
         this.toastr.success('News added updated','News add');
       })
