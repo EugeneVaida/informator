@@ -1,19 +1,20 @@
 <div class="row">
   <div class="col s12 m4">
     <form #newsForm="ngForm" class="col s12 white" (ngSubmit)="onSubmit(newsForm)">
+      <input type="hidden" name="ID" #ID="ngModel" [(ngModel)]="newsService.selectedNews.ID">
       <div class="row">
         <div class="input-field col s12">          
-          <input type="text" #NewsName ngModel name="NewsName" placeholder="Название новости" required>
+          <input type="text" #NewsName ngModel name="NewsName" [(ngModel)]="newsService.selectedNews.NewsName" placeholder="Название новости" required>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">          
-          <input type="text" #Text ngModel name="Text" placeholder="Текст" required>
+          <input type="text" #Text ngModel name="Text" [(ngModel)]="newsService.selectedNews.Text" placeholder="Текст" required>
         </div>
       </div>
       <div class="row">
          <div class="input-field col s12">
-           <input type="text" #Description ngModel name="Descriprion" placeholder="Краткое описание" required>
+           <input type="text" #Description ngModel name="Description" [(ngModel)]="newsService.selectedNews.Description" placeholder="Краткое описание" required>
          </div>
        </div>
        <div class="row">

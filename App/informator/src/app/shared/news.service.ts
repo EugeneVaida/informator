@@ -12,20 +12,23 @@ export class NewsService {
   newsList : News[];
   constructor(private http : Http) { }
 
+
+
   postNews(nws : News){
-    var body = JSON.stringify(nws);
-    var headers = new HttpHeaders("Authorization", "Bearer " + localStorage.getItem('userToken');
-    var requestOptions = new RequestOptions({method : RequestMethod.Post,headers : headers});
-    return this.http.post('http://localhost:6936/api/News',body,requestOptions).map(x => x.json());
+    var body = JSON.stringify(nws);    
+    var headerOptions = new Headers({ 'Content-Type': 'application/json' });
+    headerOptions.append('Authorization', `Bearer ${localStorage.getItem('userToken')}`);
+    //var header = new HttpHeaders({"Authorization" : "Bearer " + localStorage.getItem('userToken')});
+    var requestOptions = new RequestOptions({ method: RequestMethod.Post, headers: headerOptions });
+    return this.http.post('http://localhost:6936/api/News', body, requestOptions).map(x => x.json());
   }
+  
  
   putNews(id, nws) {
     var body = JSON.stringify(nws);
-    var headerOptions = new Headers({ 'Content-Type': 'application/json' });
+    var headerOptions = new Headers({ 'Content-Type': 'application/json', "Authorization" : "Bearer " + localStorage.getItem('userToken') });
     var requestOptions = new RequestOptions({ method: RequestMethod.Put, headers: headerOptions });
-    return this.http.put('http://localhost:6936/api/PutNews/' + id,
-      body,
-      requestOptions).map(res => res.json());
+    return this.http.put('http://localhost:6936/api/News/' + id, body, requestOptions).map(res => res.json());
   }
  
   getNewsList(){
@@ -38,7 +41,10 @@ export class NewsService {
   }
  
   deleteNews(id: number) {
-    return this.http.delete('http://localhost:6936/api/News/' + id).map(res => res.json());
+    var headerOptions = new Headers({ 'Content-Type': 'application/json', "Authorization" : "Bearer " + localStorage.getItem('userToken') });    
+    //var header = new HttpHeaders({"Authorization" : "Bearer " + localStorage.getItem('userToken')});
+    var requestOptions = new RequestOptions({ method: RequestMethod.Delete, headers: headerOptions });
+    return this.http.delete('http://localhost:6936/api/News/' + id, requestOptions).map(res => res.json());
   }
 
 

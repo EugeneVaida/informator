@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsService } from '../shared/news.service';
+import { UserService } from '../shared/user.service';
 import { News } from '../shared/news.model';
 import { ToastrService } from 'ngx-toastr';
 
@@ -10,14 +11,14 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class NewsListComponent implements OnInit {
 
-  constructor(private newsService : NewsService, private toastr : ToastrService) { }
+  constructor(private newsService : NewsService, private toastr : ToastrService, private userService: UserService) { }
 
   ngOnInit() {
-    this.newsService.getNewsList()
+    this.newsService.getNewsList();
   }
 
   showForEdit(nws: News) {
-    this.newsService.selectedNews = Object.assign({}, nws);;
+    this.newsService.selectedNews = Object.assign({}, nws);
   }
  
  

@@ -43,7 +43,7 @@ export class NewsComponent implements OnInit {
       this.newsService.putNews(form.value.ID,form.value).subscribe( data => {
         this.resetForm(form);
         this.newsService.getNewsList();
-        this.toastr.success('News added updated','News add');
+        this.toastr.success('News updated','News add');
       })
     }
   }
