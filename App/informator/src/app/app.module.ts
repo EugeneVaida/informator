@@ -21,6 +21,7 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
 
 import { NewsComponent } from './news/news.component';
 import { NewsListComponent } from './news-list/news-list.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { NewsListComponent } from './news-list/news-list.component';
     AdminPanelComponent,
     ForbiddenComponent,
     NewsComponent,
-    NewsListComponent
+    NewsListComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
