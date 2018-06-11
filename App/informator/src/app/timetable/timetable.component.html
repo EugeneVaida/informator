@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col s12 m4">
+    <form #timeForm="ngForm" class="col s12 white" (ngSubmit)="onSubmit(timeForm)">
+      <input type="hidden" name="Id" #Id="ngModel" [(ngModel)]="timeService.selectedTime.Id">
+      <div class="row">
+        <div class="input-field col s12">          
+          <input type="text" #Group ngModel name="Group" [(ngModel)]="timeService.selectedTime.Group" placeholder="Группа" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">          
+          <input type="text" #Room ngModel name="Room" [(ngModel)]="timeService.selectedTime.Room" placeholder="Аудитория" required>
+        </div>
+      </div>
+      <div class="row">
+         <div class="input-field col s12">
+           <input type="text" #Subject ngModel name="Subject" [(ngModel)]="timeService.selectedTime.Subject" placeholder="Предмет" required>
+         </div>
+       </div>
+       <div class="row">
+           <div class="input-field col s6">
+             <button  class="btn-large btn-submit" type="submit">Добавить</button>
+           </div>
+           <div class="input-field col s6">
+            <button class="btn-large btn-submit" type="button" (click)="resetForm(timeForm)">Сброс</button>
+          </div>
+        </div>
+   </form>
+  </div>
+  <app-timetable-list></app-timetable-list>
+</div>

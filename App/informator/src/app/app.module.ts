@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http'
 
 import { AppComponent } from './app.component';
 import { UserService } from './shared/user.service';
+import { TimeTableService } from './shared/timetable.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { UserComponent } from './user/user.component';
@@ -21,6 +22,8 @@ import { ForbiddenComponent } from './forbidden/forbidden.component';
 
 import { NewsComponent } from './news/news.component';
 import { NewsListComponent } from './news-list/news-list.component';
+import { TimetableComponent } from './timetable/timetable.component';
+import { TimetableListComponent } from './timetable-list/timetable-list.component';
 
 
 @NgModule({
@@ -33,7 +36,9 @@ import { NewsListComponent } from './news-list/news-list.component';
     AdminPanelComponent,
     ForbiddenComponent,
     NewsComponent,
-    NewsListComponent
+    NewsListComponent,
+    TimetableComponent,
+    TimetableListComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,7 @@ import { NewsListComponent } from './news-list/news-list.component';
     RouterModule.forRoot(appRoutes),
     HttpModule
   ],
-  providers: [UserService,AuthGuard,
+  providers: [UserService,TimeTableService,AuthGuard,
     ,
     {
       provide : HTTP_INTERCEPTORS,
