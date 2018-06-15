@@ -15,7 +15,7 @@ export class TimeTableService {
 
 
   postTime(tmt : TimeTable){
-    var body = JSON.stringify(tmt);    
+    var body = JSON.stringify(tmt);
     var headerOptions = new Headers({ 'Content-Type': 'application/json' });
     headerOptions.append('Authorization', `Bearer ${localStorage.getItem('userToken')}`);
     //var header = new HttpHeaders({"Authorization" : "Bearer " + localStorage.getItem('userToken')});
@@ -33,6 +33,15 @@ export class TimeTableService {
  
   getTimeList(){
     this.http.get('http://localhost:6936/api/TimeTables')
+    .map((data : Response) =>{
+      return data.json() as TimeTable[];
+    }).toPromise().then(x => {
+      this.timeList =  x;
+    })
+  }
+
+  getTodayTimeList(){
+    this.http.get('http://localhost:6936/api/GetTodayTimeTable')
     .map((data : Response) =>{
       return data.json() as TimeTable[];
     }).toPromise().then(x => {

@@ -16,7 +16,12 @@
          <div class="input-field col s12">
            <input type="text" #Subject ngModel name="Subject" [(ngModel)]="timeService.selectedTime.Subject" placeholder="Предмет" required>
          </div>
-       </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" #Date ngModel name="Date" [(ngModel)]="timeService.selectedTime.Date" placeholder="Дата" required>
+        </div>
+     </div>
        <div class="row">
            <div class="input-field col s6">
              <button  class="btn-large btn-submit" type="submit">Добавить</button>

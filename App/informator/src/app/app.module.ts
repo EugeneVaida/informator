@@ -24,6 +24,8 @@ import { NewsComponent } from './news/news.component';
 import { NewsListComponent } from './news-list/news-list.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { TimetableListComponent } from './timetable-list/timetable-list.component';
+import { TodayTimeTableComponent } from './today-time-table/today-time-table.component';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import { TimetableListComponent } from './timetable-list/timetable-list.componen
     NewsComponent,
     NewsListComponent,
     TimetableComponent,
-    TimetableListComponent
+    TimetableListComponent,
+    TodayTimeTableComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

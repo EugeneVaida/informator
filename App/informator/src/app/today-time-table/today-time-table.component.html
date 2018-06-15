@@ -7,11 +7,7 @@
           <p >Аудитория {{ time.Room }}</p> 
           <p>Предмет {{ time.Subject }}</p>
           <p>Дата {{ time.Date }} </p>
-        </div> 
-        <div class="card-action" *ngIf="userService.roleMatch(['Admin'])">
-          <a  (click)="onDelete(time.Id)">Удалить</a>
-          <a  (click)="showForEdit(time)">Редактировать</a>
-        </div>         
+        </div>                 
       </div>
     </div>
   </div>

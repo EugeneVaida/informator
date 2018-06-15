@@ -30,7 +30,7 @@ export class TimetableComponent implements OnInit {
   }
 
   onSubmit(form : NgForm){
-    if (form.value.ID == null){
+    if (form.value.Id == null){
       this.timeService.postTime(form.value).subscribe( data => { 
         this.resetForm(form);
         this.timeService.getTimeList();
