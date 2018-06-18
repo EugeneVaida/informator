@@ -26,6 +26,7 @@ import { TimetableComponent } from './timetable/timetable.component';
 import { TimetableListComponent } from './timetable-list/timetable-list.component';
 import { TodayTimeTableComponent } from './today-time-table/today-time-table.component';
 import { MainComponent } from './main/main.component';
+import { LateNewsComponent } from './late-news/late-news.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { MainComponent } from './main/main.component';
     TimetableComponent,
     TimetableListComponent,
     TodayTimeTableComponent,
-    MainComponent
+    MainComponent,
+    LateNewsComponent
   ],
   imports: [
     BrowserModule,

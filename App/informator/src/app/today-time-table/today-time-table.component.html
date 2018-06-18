@@ -1,12 +1,11 @@
 <div class="col s12 m8">
   <div class="row">
     <div *ngFor="let time of timeService.timeList" class="col s12 m4">
-      <div class="card blue-grey darken-1 small">
+      <div class="card grey darken-1">
         <div class="card-content white-text">
-          <span class="card-title">Группа {{ time.Group }}</span>
-          <p >Аудитория {{ time.Room }}</p> 
-          <p>Предмет {{ time.Subject }}</p>
-          <p>Дата {{ time.Date }} </p>
+          <h2 >{{ time.Group }}</h2>
+          <p>Аудитория: {{ time.Room }}</p> 
+          <p>Предмет: {{ time.Subject }}</p>          
         </div>                 
       </div>
     </div>

@@ -1,13 +1,69 @@
-<div class="container">
-  <a routerLink="/login">Войти</a>
-</div>
-<div class="container">
-  Body information
-</div>
-<div class="container">
-  <h1>TimeTable</h1>
-</div>
-<div class="container">
-  <app-today-time-table></app-today-time-table>
-</div>
+<nav class="black" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Информатор</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a routerLink="/login">Вход</a></li>        
+      </ul>
 
+      <ul id="nav-mobile" class="sidenav">
+        <li><a routerLink="/login">Вход</a></li> 
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Информатор</h1>
+      <div class="row center">
+        <h5 class="header col s12 light white-text">Информации хватит на всех</h5>
+      </div>      
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <h2 class="header center grey-text text-darken-2">
+        Рассписание на сегодня
+      </h2>
+      <app-today-time-table></app-today-time-table>
+      
+
+    </div>
+    <br><br>
+  </div>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <h2 class="header center grey-text text-darken-2">
+        Новости
+      </h2>
+      <app-late-news></app-late-news>
+      
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Итоговое приложение ТРПО</h5>
+          <p class="grey-text text-lighten-4">"Информатор" - инфокиоск для сайта МРК</p>
+
+
+        </div>        
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3">Eugene Vaida</a>
+      </div>
+    </div>
+  </footer>
